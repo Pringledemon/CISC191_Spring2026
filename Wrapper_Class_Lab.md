@@ -23,7 +23,7 @@ public class Main
         //2.2
         System.out.println(Integer.MAX_VALUE + "\n" + Integer.MIN_VALUE + "\n");
         //Reflection
-        //The constants are useful because its useful to know limits also the two methods help with readability of programming
+        //The constants are useful because it's useful to know limits also the two methods help with readability of programming
         //3
         ArrayList<Integer> list = new ArrayList<>();
         list.add(1);
