@@ -126,4 +126,7 @@ public class MemoryPressure {
 3. -Xmx
 # Part 6
 ### Questions
-1. 
+1. It's automated
+2. Memory optimization
+3. Gives direct control to the coder
+4. Reference that can't be garbage collected
