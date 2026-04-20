@@ -2,6 +2,7 @@
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.NumberFormat;
 import javax.swing.*;
 
 public class Main extends JFrame implements ActionListener
@@ -10,7 +11,7 @@ public class Main extends JFrame implements ActionListener
     private JLabel kmLabel;
     private JLabel mLabel;
     private JLabel fLabel;
-    private JTextField dField;
+    private JFormattedTextField dField;
     private JTextField kmField;
     private JTextField mField;
     private JTextField fField;
@@ -26,9 +27,10 @@ public class Main extends JFrame implements ActionListener
         mLabel = new JLabel("Distance(Meters):");
         fLabel = new JLabel("Distance(Feet):");
 
-        dField = new JTextField(15);
+        dField = new JFormattedTextField(NumberFormat.getNumberInstance());;
         dField.setEditable(true);
         dField.setText("");
+        dField.setColumns(15);
 
         kmField = new JTextField(15);
         kmField.setEditable(false);
